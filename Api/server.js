@@ -3,6 +3,7 @@ const {PythonShell} = require ('python-shell');
 const csv = require('csvtojson');
 
 const fs = require('fs');
+port = process.env.PORT || 80
 
 const app = express();
 const bodyParser = require("body-parser");
@@ -223,7 +224,7 @@ app.post('/geotagging',(req,res)=>{
 	console.log(radius,lattitude,longitude)
 	res.redirect('/geotagging/result')
 })
-const server = app.listen(process.env.port || 443, () =>
+const server = app.listen(process.env.port || 80, () =>
 	console.log(`Example app listening on port 
 ${port}!`)
 );

@@ -3,7 +3,7 @@ const {PythonShell} = require ('python-shell');
 const csv = require('csvtojson');
 
 const fs = require('fs');
-port = process.env.PORT || 80
+const port = process.env.PORT || 80
 
 const app = express();
 const bodyParser = require("body-parser");

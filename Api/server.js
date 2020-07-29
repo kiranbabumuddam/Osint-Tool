@@ -223,7 +223,7 @@ app.post('/geotagging',(req,res)=>{
 	console.log(radius,lattitude,longitude)
 	res.redirect('/geotagging/result')
 })
-const server = app.listen(process.env.port || 3000, () =>
+const server = app.listen(process.env.port || 443, () =>
 	console.log(`Example app listening on port 
 ${port}!`)
 );
